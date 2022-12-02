@@ -1,3 +1,5 @@
+import Main from "../views/Main.js";
+
 const navigateTo = (url) => {
   history.pushState(null, null, url);
   router();
@@ -5,10 +7,10 @@ const navigateTo = (url) => {
 
 const router = async () => {
   const routes = [
-    { path: "404", view: () => console.log("404 page") },
-    { path: "/", view: () => console.log("main page") },
-    { path: "/page1", view: () => console.log("page1") },
-    { path: "/page2", view: () => console.log("page2") },
+    // { path: "404", view: () => console.log("404 page") },
+    { path: "/", view: Main },
+    // { path: "/page1", view: () => console.log("page1") },
+    // { path: "/page2", view: () => console.log("page2") },
   ];
 
   const potentialMathes = routes.map((route) => {
@@ -24,7 +26,10 @@ const router = async () => {
     };
   }
 
-  console.log(match, match.route.view());
+  const view = new match.route.view();
+
+  console.log(view);
+  document.querySelector("#app").innerHTML = await view.getHtml();
 };
 
 window.addEventListener("popstate", router);
