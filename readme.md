@@ -4,6 +4,13 @@
 
 ---
 
+### 작업 내용
+
+티스토리 블로그: [링크(상세 과정 제외)](https://dusunax.tistory.com/entry/javaScript%EB%A1%9C-SPA-%EA%B5%AC%ED%98%84%ED%95%98%EA%B8%B0)
+
+노션 기록: [링크](https://dusunax.notion.site/JavaScript-SPA-482e73b762b7441b822f63fccd4df1f6)
+
+
 ### 설명
 
 - /caseA
@@ -14,11 +21,6 @@
   - ES6 module, express 사용(오랜만!)
   - 조금 심화된 원리
 
-### 작업 내용
-
-노션 링크 : https://dusunax.notion.site/JavaScript-SPA-482e73b762b7441b822f63fccd4df1f6
-
-(티스토리 블로그에 맞게 다시 작성 후, 링크를 교체할 예정입니다.)
 
 ### 개요
 
